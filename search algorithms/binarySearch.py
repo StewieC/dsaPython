@@ -14,7 +14,7 @@ def search(arr, target, low, high):
 arr = [1,3,4,5,66,77,23,67]
 
 #declare the target number for search
-target = 3
+target = 23
 
 #binary search drive code
 result = search(arr, target, 0, len(arr) - 1)
