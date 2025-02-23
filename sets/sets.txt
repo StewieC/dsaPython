@@ -1,0 +1,5 @@
+a built in collection in python that can store unique elements of different data types.
+
+it is an unordered collection, meaning the elements do not maintain any specific order as they are added.
+
+sets do not allow duplicate elemens and automatically removes duplicates
