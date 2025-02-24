@@ -1,2 +1,22 @@
 involves a functin calling itself directly or indirectly to solve a problem by breaking it down into simpler and mor managable parts.
 
+Basic Structure of Recursive Function
+def recursive_function(parameters):
+
+
+    if base_case_condition:
+
+
+        return base_result
+
+
+    else:
+
+
+        return recursive_function(modified_parameters)
+
+BASE CASE:
+This is the condition under which te recursion stops.
+
+RECURSIVE CASE:
+This is the part of the function that includesthe call to itself
