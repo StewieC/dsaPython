@@ -1,0 +1,2 @@
+involves a functin calling itself directly or indirectly to solve a problem by breaking it down into simpler and mor managable parts.
+
