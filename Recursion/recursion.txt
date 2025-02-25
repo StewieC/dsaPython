@@ -20,3 +20,13 @@ This is the condition under which te recursion stops.
 
 RECURSIVE CASE:
 This is the part of the function that includesthe call to itself
+
+        TYPES OF RECURSION:
+1) TAIL RECURSION:
+    this occurs when the recusive call is the last operation executed in the function, with no additional calculation.
+
+2) NON TAIL RECURSION:
+    this occurs when there are operations or calculation that follow therecursive call.
+    this type prevents the compiler or interprater from optimizing the recursion into an iteration.
+
+    
