@@ -1,0 +1,16 @@
+like a stack, queue is a linear data structure that stores items in a first in first out manner.
+
+with a queue, the recently addeditem is removed first
+
+Operations associated with queue:
+    Enqueue: adds an item to the queue. if the queue is full, then it is said to be an overflow condition.
+
+    Dequeue:
+    removes an item from the queue. the items are popped in the same order they were pushed.
+    if the queue is empty, the its an underflow condition
+
+    Front:
+    get the front item from the queue, time complexity O(1)
+
+    Rear:
+    get the last item from queue, time complexity O(1)
