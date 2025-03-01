@@ -14,3 +14,22 @@ Operations associated with queue:
 
     Rear:
     get the last item from queue, time complexity O(1)
+
+IMPLEMENTING A QUEUE:
+
+    Implementation using a list:
+instead of enqueue() and dequeue(), append and pop functions are used.
+
+however lists are quite slow for this purpose because insertong and deleting an element at the begining requires shifting other elements by one requiring O(n) time
+
+    implementation using collections.deque:
+Queue can be implemented using deque class from the collections module.
+
+Deque is prefered over lists in xases where we need quicker append and pop operations from both the ends of the container as deque provides O(1) time complexity.
+
+Instead of enqueue and deque, append() and popleft() functions are used.
+
+    Implementation using queue.Queue:
+Queue is built in module of python which is used to implement a queue.queue.
+
+Queue(maxsize) initializes a variable to a maximum size of maxsize. A maxsize of zero ‘0’ means a infinite queue. This Queue follows FIFO rule. 
