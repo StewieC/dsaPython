@@ -1,0 +1,24 @@
+                LINKEDLISTS:
+
+Linked List is a linear data structure where elements, called nodes, are stored in a sequence. 
+
+Each node contains two parts: the data and a reference (or link) to the next node in the sequence. 
+
+The last node points to None, indicating the end of the list.
+
+Linked List allows for efficient insertions and deletions, especially when elements need to be added or removed from the beginning or middle of the list, as no shifting of elements is required.
+
+
+        Creating a linkedlist:
+
+in this linkedlist we will use the node class to create a linked list.
+
+The class includes the following methods:
+
+__init__: Initializes the linked list with an empty head.
+insertAtBegin(): Inserts a node at the beginning of the linked list.
+insertAtIndex(): Inserts a node at the given index of the linked list.
+insertAtEnd(): Inserts a node at the end of the linked list.
+remove_node(): Deletes a node by taking data as an argument. It traverses the linked list and deletes the node if a match is found.
+sizeOfLL(): Returns the current size of the linked list.
+printLL(): Traverses the linked list and prints the data of each node. printLL() method ensures the last node is printed by adding a print(current_node.data) after the loop ends. This handles the edge case of printing the last node.
