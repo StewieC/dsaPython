@@ -59,3 +59,31 @@ def insertAtIndex(self, data, index):
         current_node.next = new_node
     else:
         print("Index not present")
+
+
+"""
+INSERT AT THE END OF THE LIST 
+
+Step-by-step Approach:
+
+Create a new_node with the given data.
+Check if the head is an empty node:
+If the head is empty, make the new_node the head and return.
+If the head is not empty, set current_node to the head.
+Traverse the linked list by running a while loop until current_node becomes None, indicating the last node.
+Once the loop breaks, insert the new_node after the current_node, which is the last node of the linked list.
+
+
+"""
+
+def inserAtEnd(self, data):
+    new_node = Node(data)
+    if self.head is None:
+        self.head = new_node
+        return
+
+    current_node = self.head
+    while(current_node.next):
+        current_node = current_node.next
+
+    current_node.next = new_node
