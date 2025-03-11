@@ -87,3 +87,24 @@ def inserAtEnd(self, data):
         current_node = current_node.next
 
     current_node.next = new_node
+
+
+""" UPDATIONG A NODE OF A LINKED LIST
+
+"""
+# Update node of a linked list
+# at given position
+def updateNode(self, val, index):
+    current_node = self.head
+    position = 0
+    if position == index:
+        current_node.data = val
+    else:
+        while(current_node != None and position != index):
+            position = position+1
+            current_node = current_node.next
+
+        if current_node != None:
+            current_node.data = val
+        else:
+            print("Index not present")
