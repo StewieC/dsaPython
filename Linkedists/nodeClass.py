@@ -108,3 +108,20 @@ def updateNode(self, val, index):
             current_node.data = val
         else:
             print("Index not present")
+
+"""
+DELETE NODE IN LINKEDLIST
+
+"""
+# REMOVNG A NODE FROM THE BEGINNING OF THE LINKEDLIST
+"""
+Steps-by-step approach:
+
+Check if the head of the linked list is None. If it is, return as there are no nodes to remove.
+Update the head to point to the next node (self.head = self.head.next), effectively removing the first node from the linked list.ist.
+"""
+def remove_first_node(self):
+    if(self.head == None):
+        return
+    
+    self.head = self.head.next
