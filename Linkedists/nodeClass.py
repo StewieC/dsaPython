@@ -125,3 +125,25 @@ def remove_first_node(self):
         return
     
     self.head = self.head.next
+
+# REMOVE THE LAST NODE FROM THE LINKEDLIST
+"""
+Step-by-step Approach:
+
+Check if the head of the linked list is None. If it is, return as there are no nodes to remove.
+Initialize a current_node with self.head to start from the head of the list.
+Traverse the linked list using a while loop that continues until current_node.next is None or current_node.next.next is None. This ensures the loop stops at the second-to-last node.
+Once the loop breaks, current_node will be pointing to the second-to-last node.
+Set current_node.next to None, effectively removing the last node from the linked list.
+"""
+
+def remove_last_node(self):
+
+    if self.head is None:
+        return
+
+    curr_node = self.head
+    while (curr_node.next != None and curr_node.next.next != None):
+        curr_node = curr_node.next
+
+    curr_node.next = None
