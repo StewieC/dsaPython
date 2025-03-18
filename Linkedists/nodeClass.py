@@ -182,3 +182,30 @@ def remove_at_index(self, index):
             print("Index out of range")
         else:
             current_node.next = current_node.next.next
+
+# DELETE A NODE WITH A GIVEN VALUE FROM THE LINKEDLIST
+
+"""
+Step-by-step Approach:
+
+Initialize a current_node with the head of the linked list and run a while loop to traverse the list.
+The loop continues until current_node becomes None or the data of the node next to current_node matches the given data.
+After the loop:
+If current_node is None, it means the node with the given data is not present, so return without making any changes.
+If the data next to current_node matches the given data, remove that node by updating current_node.next to current_node.next.next, effectively bypassing the node to be removed.
+"""
+
+def remove_node (self, data):
+    current_node = self.head
+
+    # check if the head node contains the specified data
+    if current_node.data == data:
+        self.remove_first_node()
+        return
+    while current_node is not None and current_node.next.data != data:
+        current_node = current_node.next
+
+    if current_node is None:
+        return
+    else:
+        current_node.next = current_node.next.next
