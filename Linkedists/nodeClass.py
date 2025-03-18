@@ -147,3 +147,38 @@ def remove_last_node(self):
         curr_node = curr_node.next
 
     curr_node.next = None
+
+# DELETE A NODE AT A SPECIFIC POSITION IN THE LINKEDLIST
+"""
+Step-by-step Approach:
+
+If the head is None, simply return as there are no nodes to remove.
+Initialize a current_node with self.head and a position with 0.
+If the position is equal to the index, call the remove_first_node() method.
+If the position is not equal to the index, traverse to the node just before the one to be removed using a while loop.
+The loop continues until current_node becomes None or position reaches index – 1.
+After the loop:
+If current_node or current_node.next is None, it means the index is out of range.
+If not, bypass the node to be removed by setting current_node.next to current_node.next.next.
+
+
+"""
+
+def remove_at_index(self, index):
+    if self.head is None:
+        return
+    
+    current_node = self.head
+    position = 0
+
+    if index == 0:
+        self.remove_first_node()
+    else:
+        while current_node is not None and position < index - 1:
+            position += 1
+            current_node = current_node.next
+
+        if current_node is None or current_node.next is None:
+            print("Index out of range")
+        else:
+            current_node.next = current_node.next.next
