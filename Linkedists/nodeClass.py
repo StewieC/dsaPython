@@ -209,3 +209,21 @@ def remove_node (self, data):
         return
     else:
         current_node.next = current_node.next.next
+
+
+
+# LINKEDLIST TRAVERSAL
+"""
+Step-by-step Approach:
+
+Initialize a current_node with the head of the linked list.
+Use a while loop to traverse the linked list, continuing until current_node becomes None.
+In each iteration, print the data of the current_node.
+After printing, update current_node to the next node in the list by setting current_node to current_node.next.
+"""
+
+def printLL(self):
+    current_node = self.head
+    while(current_node):
+        print(current_node.data)
+        current_node = current_node.next
