@@ -227,3 +227,26 @@ def printLL(self):
     while(current_node):
         print(current_node.data)
         current_node = current_node.next
+
+# GET THE LENGTH OF A LINKEDLIST
+
+"""
+Step-by-step Approach:
+
+Initialize a size counter with 0.
+Check if the head is not None. If the head is None, return 0 as the linked list is empty.
+Traverse the linked list using a while loop until current_node becomes None.
+In each iteration, increment the size by 1.
+Once the loop finishes, return the size, which represents the total number of nodes in the linked list.
+"""
+
+def sizeOfLL(self):
+    size = 0
+    if (self.head):
+        current_node = self.head
+        while(current_node):
+            size = size + 1
+            current_node = current_node.next
+        return size
+    else:
+        return 0
