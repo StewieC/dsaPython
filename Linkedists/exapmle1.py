@@ -79,4 +79,24 @@ class LinkedList:
             current_node = current_node.next
 
         current_node.next = None
+
+    # remove a node at any index
+    def remove_at_index(self, index):
+        if self.head is None:
+            return
+
+        if index == 0:
+            self.remove_first_node()
+            return
+
+        current_node = self.head
+        position = 0
+        while current_node is not None and current_node.next is not None and position + 1 != index:
+            position += 1
+            current_node = current_node.next
+
+        if current_node is not None and current_node.next is not None:
+            current_node.next = current_node.next.next
+        else:
+            print("Index not present")
         
