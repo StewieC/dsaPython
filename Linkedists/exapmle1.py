@@ -65,4 +65,18 @@ class LinkedList:
         self.head = self.head.next
 
     # remove the last node of the linkedlist
-    
+    def remove_last_node(self):
+        if self.head is None:
+            return
+        
+        # if there is only one node in the linkedlist
+        if self.head.next is None:
+            self.head = None
+            return
+        # transverse to the second last node
+        current_node = self.head
+        while current_node.next and current_node.next.next:
+            current_node = current_node.next
+
+        current_node.next = None
+        
