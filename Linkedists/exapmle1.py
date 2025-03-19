@@ -44,3 +44,16 @@ class LinkedList:
         while current_node.next:
             current_node = current_node.next
         current_node.next = new_node
+
+    # update a node at any index
+    def updateNode(self, val, index):
+        current_node = self.head
+        position = 0
+        while current_node is not None and position != index:
+            position += 1
+            current_node = current_node.next
+        if current_node is not None:
+            current_node.data = val
+        else:
+            print("Index not present in the linkedlist")
+            
