@@ -99,4 +99,21 @@ class LinkedList:
             current_node.next = current_node.next.next
         else:
             print("Index not present")
-        
+    # method to remove a node with a specific value
+    def remove_node(self, data):
+        current_node = self.head
+
+        # If the node to be removed is the head node
+        if current_node is not None and current_node.data == data:
+            self.remove_first_node()
+            return
+
+        # Traverse and find the node with the matching data
+        while current_node is not None and current_node.next is not None:
+            if current_node.next.data == data:
+                current_node.next = current_node.next.next
+                return
+            current_node = current_node.next
+
+        # If the data was not found
+        print("Node with the given data not found")
