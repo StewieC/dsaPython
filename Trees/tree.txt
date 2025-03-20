@@ -1,2 +1,13 @@
 Tree Data Structure is a non linear data structure in which a collection of elements known as nodes are connected to each other via edges such that there exists one path btn two nodes.
 
+BASIC TERMS"
+Parent Node: the node which is immediate predecessor of a node
+
+Child Node: immediate successor of a node
+
+Root Node: the topmost node of a tree which doesnt have any Parent
+
+Leaf Node: nodes that do not have any child node
+
+Ancestor of a Node: any predecessor nodes on the path of the root to that node
+
