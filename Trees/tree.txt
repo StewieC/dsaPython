@@ -11,3 +11,6 @@ Leaf Node: nodes that do not have any child node
 
 Ancestor of a Node: any predecessor nodes on the path of the root to that node
 
+ TYPES OF TREE DATA STRUCTURE:
+ 1. Binary Tree:
+    a non linear and hierachial data structure where each node has at most two children
