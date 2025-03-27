@@ -44,3 +44,11 @@ def printLeafNodes(Root, adj):
         if len(adj[i]) == 1 and i != Root:
             print(i),
 
+def printDegrees(Root, adj):
+    for i in range(1, len(adj)):
+        print(i, ":"),
+        # root has no parent thus its degree is equal to the edges it is connected to
+        if i == Root:
+            print(len(adj[i]))
+        else:
+            print(len(adj[i]) - 1)
