@@ -52,3 +52,33 @@ def printDegrees(Root, adj):
             print(len(adj[i]))
         else:
             print(len(adj[i]) - 1)
+
+
+# Driver code
+N = 7
+Root = 1
+# Adjacency list to store the tree
+adj = [[] for _ in range(N + 1)]
+# Creating the tree
+addEdge(1, 2, adj)
+addEdge(1, 3, adj)
+addEdge(1, 4, adj)
+addEdge(2, 5, adj)
+addEdge(2, 6, adj)
+addEdge(4, 7, adj)
+
+# Printing the parents of each node
+print("The parents of each node are:")
+printParents(Root, adj, 0)
+
+# Printing the children of each node
+print("The children of each node are:")
+printChildren(Root, adj)
+
+# Printing the leaf nodes in the tree
+print("The leaf nodes of the tree are:")
+printLeafNodes(Root, adj)
+
+# Printing the degrees of each node
+print("The degrees of each node are:")
+printDegrees(Root, adj)
