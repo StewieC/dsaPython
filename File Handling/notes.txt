@@ -1,0 +1,5 @@
+refers to the process of performing operations on a filesuch as creating, opening, reading and closing it,
+through a programming interface
+
+involves managing the dataflow btn the program and the file system on the storage device,
+ensuring the data is handled safely and efficiently
