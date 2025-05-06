@@ -1,0 +1,5 @@
+user defined templates for creating objects
+
+bundles data and functions together making it easier to manage and use them.
+
+when we create a new class, we define a new type of object, we then can create multiple instances
