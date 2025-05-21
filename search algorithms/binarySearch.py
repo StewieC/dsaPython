@@ -17,7 +17,8 @@ arr = [1,3,4,5,66,77,23,67]
 target = 23
 
 #binary search drive code
-result = search(arr, target, 0, len(arr) - 1)
+result = search(arr, target, 0, len(arr) - 1) 
+# put an if statement for if the result is positive
 if result != -1:
     print("Element is present at index", str(result))
 else:
